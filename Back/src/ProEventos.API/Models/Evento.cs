@@ -1,7 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ProEventos.API.Models
 {
+    [Table("Evento")]
     public class Evento
     {
+        [Key]
         public int EventoId { get; set; }
         public string Local { get; set; }
         public string DataEvento { get; set; }
